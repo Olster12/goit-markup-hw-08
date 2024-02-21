@@ -1,0 +1,11 @@
+/* Portfolio */
+
+.portfolio__nav {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__item:not(:last-child){
+    margin-right: 8px;
+}
