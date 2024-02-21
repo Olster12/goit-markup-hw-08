@@ -1,7 +1,7 @@
 /* Aur client */
 
 .client__list {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .client__icon {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     width: 170px;
@@ -28,7 +28,6 @@
 
 .client__icon:hover,
 .client__icon:focus {
-            border-color: var(--svg-link-color);
-            fill: var(--svg-link-color);
-        }
-
+    border-color: var(--svg-link-color);
+    fill: var(--svg-link-color);
+}

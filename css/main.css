@@ -120,15 +120,18 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
 
 /* Cars SET */
 .card-set {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*/*display: flex;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
@@ -260,9 +263,7 @@ img {
 }
 
 .button-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -365,9 +366,7 @@ img {
 }
 
 .modal__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -419,9 +418,7 @@ img {
 }
 
 .form__fild {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -478,9 +475,7 @@ img {
 
 .check {
   padding-left: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   margin-bottom: 30px;
   margin-left: 13px;
   -webkit-box-align: center;
@@ -517,22 +512,16 @@ img {
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
 }
 
 /*Nav site*/
 .nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  /*display: inline-flex;*/
 }
 
 .nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
 }
 
 .nav__item:not(:first-child) {
@@ -571,9 +560,7 @@ img {
 }
 
 .phone-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -585,9 +572,7 @@ img {
 }
 
 .phone-email__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -662,15 +647,11 @@ img {
 
 /* Аdvantages */
 .advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
 }
 
 .advantages__tumba {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   padding: 30px 100px;
   margin-bottom: 30px;
   height: 120px;
@@ -705,9 +686,7 @@ img {
 }
 
 .abaut-us__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
 }
 
 .abaut-us__item {
@@ -755,9 +734,7 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
@@ -786,9 +763,7 @@ img {
 
 /* Aur client */
 .client__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -799,9 +774,7 @@ img {
 }
 
 .client__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -830,9 +803,7 @@ img {
 }
 
 .footer__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   padding-top: 60px;
   padding-bottom: 60px;
   -webkit-box-align: baseline;
@@ -841,9 +812,7 @@ img {
 }
 
 .logo-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   padding: 0;
   margin-bottom: 20px;
 }
@@ -887,9 +856,7 @@ img {
 }
 
 .footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -921,9 +888,7 @@ img {
 /* Portfolio */
 .portfolio__nav {
   margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

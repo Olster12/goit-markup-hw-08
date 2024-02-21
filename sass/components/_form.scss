@@ -4,13 +4,13 @@
     padding: 40px;
 
     ::placeholder {
-            color: rgba(117, 117, 117, 0.5);
-            letter-spacing: 0.01em;
-        }
+        color: rgba(117, 117, 117, 0.5);
+        letter-spacing: 0.01em;
+    }
 }
 
 .form__fild {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     position: relative;
 }
@@ -71,7 +71,7 @@
 
 .check {
     padding-left: 15px;
-    display: flex;
+    /*display: flex;*/
     margin-bottom: 30px;
     margin-left: 13px;
     align-items: center;
