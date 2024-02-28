@@ -1,13 +1,23 @@
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 60px;
 
-    @media screen and (min-width: 481px)
-    & {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(mobile) {
         width: 480px;
     }
+    
+    @include mq(tablet) {
+        width: 738px;
+    }
+    
+    @include mq(desktop) {
+        width: 1170px;
+        padding-bottom: 94px;
+    }
 }
+
 
