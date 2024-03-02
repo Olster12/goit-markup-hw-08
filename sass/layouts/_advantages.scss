@@ -1,8 +1,10 @@
 /* Аdvantages */
 
-.advantages{
+.advantages {
     @include mq(tablet) {
         display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
@@ -12,9 +14,7 @@
     height: 120px;
     background-color: var(--backgraund-tumd-advantage);
 
-
     @include mq(tablet) {
-        display: flex;
         padding: 25px 142px;
     }
 
@@ -24,19 +24,20 @@
 }
 
 .advantages__item {
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         max-width: 450px;
+        &:not(:last-child) {
+            margin-bottom: var(--card-set-gap);
+        }
     }
 
     @include mq(tablet) {
-        max-width: 354px;
+        flex-basis: calc((100% - var(--card-set-gap)) / 2);
+        margin: 15px;
     }
 
     @include mq(desktop) {
-        max-width: 270px;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+        max-width: calc((100% - 3 * var(--card-set-gap)) / 4);
     }
 }
 
@@ -60,13 +61,4 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    margin-bottom: 30px;
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    @include mq(tablet) {
-        margin-bottom: 0px;
-    }
-
 }

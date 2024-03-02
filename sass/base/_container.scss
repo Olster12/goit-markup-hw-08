@@ -1,7 +1,6 @@
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
 
     margin-left: auto;
     margin-right: auto;
@@ -11,12 +10,11 @@
     }
     
     @include mq(tablet) {
-        width: 738px;
+        width: 768px;
     }
     
     @include mq(desktop) {
-        width: 1170px;
-        padding-bottom: 94px;
+        width: 1200px;
     }
 }
 
