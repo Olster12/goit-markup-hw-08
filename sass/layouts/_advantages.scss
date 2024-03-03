@@ -8,21 +8,6 @@
     }
 }
 
-.advantages__tumba {
-    padding: 25px 190px;
-    margin-bottom: 30px;
-    height: 120px;
-    background-color: var(--backgraund-tumd-advantage);
-
-    @include mq(tablet) {
-        padding: 25px 142px;
-    }
-
-    @include mq(desktop) {
-        padding: 25px 100px;
-    }
-}
-
 .advantages__item {
     @include mq(mobile-only) {
         max-width: 450px;
@@ -38,6 +23,23 @@
 
     @include mq(desktop) {
         max-width: calc((100% - 3 * var(--card-set-gap)) / 4);
+        margin: 15px;
+    }
+}
+
+.advantages__tumba {
+    height: 120px;
+    padding: 25px 190px;
+    margin-bottom: 30px;
+
+    background-color: var(--backgraund-tumd-advantage);
+
+    @include mq(tablet) {
+        padding: 25px 142px;
+    }
+
+    @include mq(desktop) {
+        padding: 25px 100px;
     }
 }
 

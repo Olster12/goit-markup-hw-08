@@ -5,6 +5,7 @@
 
     @include mq(desktop) {
         display: flex;
+        margin: -15px;
     }
 }
 
@@ -15,10 +16,7 @@
 .about-us__item {
     position: relative;
     max-width: calc((100% - 2 * 30) / 3);
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    margin: 15px;
 }
 
 .about-us__decor {
