@@ -1,6 +1,7 @@
 /* Аdvantages */
 
 .advantages {
+    
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -17,12 +18,12 @@
     }
 
     @include mq(tablet) {
-        flex-basis: calc((100% - var(--card-set-gap)) / 2);
+        flex-basis: calc((100% - 2 * var(--card-set-gap)) / 2);
         margin: 15px;
     }
 
     @include mq(desktop) {
-        max-width: calc((100% - 3 * var(--card-set-gap)) / 4);
+        max-width: calc((100% - 4 * var(--card-set-gap)) / 4);
         margin: 15px;
     }
 }

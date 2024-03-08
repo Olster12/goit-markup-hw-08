@@ -5,17 +5,21 @@
 
     @include mq(desktop) {
         display: flex;
-        margin: -15px;
     }
+}
+
+.about-us__H2 {
+    padding-top: 0px;
 }
 
 .about-us__box {
     display: flex;
+    margin: -15px;
 }
 
 .about-us__item {
     position: relative;
-    max-width: calc((100% - 2 * 30) / 3);
+    width: calc((100% - 2 * var(--card-set-gap)) / 3);
     margin: 15px;
 }
 

@@ -1,20 +1,30 @@
 /* Aur client */
 
 .client__list {
-    /*display: flex;*/
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin: -15px;
 }
 
-.client__card:not(:last-child) {
-    margin-right: 30px;
+.client__card {
+    width: calc((100% - 2 * var(--card-set-gap)) / 2);
+    margin: 15px;
+
+    @include mq(tablet) {
+        width: calc((100% - 3 * var(--card-set-gap)) / 3);
+    }
+
+    @include mq(desktop) {
+        width: calc((100% - 6 * var(--card-set-gap)) / 6);
+    }
 }
 
 .client__icon {
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    padding: 16px 25px;
 
     color: var(--svg-primery-color);
     fill: #AFB1B8;

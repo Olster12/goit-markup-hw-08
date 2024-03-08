@@ -4,23 +4,53 @@
 }
 
 .footer__item {
-    /*display: flex;*/
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: baseline;
+    padding: 60px 0px;
+
+    @include mq(desktop) {
+        display: flex;
+    }
 }
 
 .logo-footer {
-    /*display: flex;*/
-    padding: 0;
-    margin-bottom: 20px;
+    display: block;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 28px;
+    text-align: center;
+
+    @include mq(desktop) {
+        text-align: start;
+    }
+}
+
+.footer__address {
+    @include mq(tablet) {
+        display: flex;
+        padding-left: 76px;
+        padding-right: 89px;
+        justify-content: space-between;
+    }
+
+    @include mq(desktop) {
+        margin-right: 94px;
+        padding: 0px;
+    }
 }
 
 .address {
+    margin-bottom: 60px;
     font-style: normal;
+    text-align: center;
     line-height: 1.14;
 
     color: #FFFFFF;
+
+    @include mq(desktop) {
+        margin-bottom: 0px;
+        margin-right: 70px;
+
+        text-align: start;
+    }
 }
 
 .address-item {
@@ -45,26 +75,45 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+
+    @include mq(desktop) {
+        text-align: start;
+    }
 }
 
 .footer__social {
-    margin-left: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    
+    text-align: center;
     width: 206px;
+
+        @include mq(tablet) {
+                margin: 0px;
+            }
+    // margin-left: 70px;
 }
 
 /* Mailing list*/
 
 .footer__mailing {
-    margin-left: 93px;
+    text-align: center;
+    // margin-left: 93px;
 }
 
 .footer__form {
-    /*display: flex;*/
     align-items: center;
+
+    @include mq(desktop) {
+        display: flex;
+    }
 }
 
 .footer__input {
-    width: 358px;
+    margin-bottom: 20px;
+
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
 
@@ -73,6 +122,12 @@
 
     color: rgba(255, 255, 255, 0.6);
     background-color: rgba(47, 48, 58, 1);
+
+    @include mq(desktop) {
+        width: 358px;
+        margin-bottom: 0px;
+        margin-right: 12px;
+    }
 }
 
 .placeholder {

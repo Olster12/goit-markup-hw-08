@@ -2,6 +2,12 @@
 
 .social {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 206px;
+    height: 44px;
+
     justify-content: space-between;
     align-items: center;
 }
