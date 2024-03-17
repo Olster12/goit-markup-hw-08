@@ -1,16 +1,28 @@
 /* Logo */
 
 .logo {
-    margin-right: 92px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 16px;
 
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
+
+    @include mq(tablet) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @include mq(desktop) {
+        font-size: 26px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
+
 
 .logo--accent {
     color: var(--logo-accent-color);

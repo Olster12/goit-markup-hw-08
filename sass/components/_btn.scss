@@ -1,3 +1,43 @@
+/* Button Nav*/
+.nav__butn {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--link-color);
+    }
+
+    @include mq (tablet) {
+        display: none;
+    }
+}
+
+.nav__butn .nav__icone-close {
+    display: none;
+}
+
+.nav__butn.is-open .nav__icone-close {
+    display: block;
+}
+
+.nav__butn.is-open .nav__icone-menu {
+    display: none;
+}
+
+.nav__butn.is-open ~ .logo {
+    display: none;
+}
+
+
+
 /* Button */
 
 .button {

@@ -29,19 +29,23 @@
 }
 
 .advantages__tumba {
+    
+
     height: 120px;
-    padding: 25px 190px;
-    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-left: calc((100% - 70px) / 2);
+    // padding: 25px 190px;
 
     background-color: var(--backgraund-tumd-advantage);
+    margin-bottom: 30px;
 
-    @include mq(tablet) {
-        padding: 25px 142px;
-    }
+    // @include mq(tablet) {
+    //     padding: 25px 142px;
+    // }
 
-    @include mq(desktop) {
-        padding: 25px 100px;
-    }
+    // @include mq(desktop) {
+    //     padding: 25px 100px;
+    // }
 }
 
 .advantages__title {
