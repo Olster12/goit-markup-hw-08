@@ -1,10 +1,11 @@
 /*Header*/
 
 .header {
-    position: relative;
+
     background-color: var(--background-header-color);
 }
 
 .header__container {
+    position: relative;
     display: flex;
 }

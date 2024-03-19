@@ -32,7 +32,7 @@
     display: none;
 }
 
-.nav__butn.is-open ~ .logo {
+.nav__butn.is-open~.logo {
     display: none;
 }
 
@@ -75,6 +75,12 @@
 
 .button-secondary {
     padding: 6px 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    text-align: center;
 
     color: var(--btn-sec-text);
     background-color: var(--btn-sec-background);
