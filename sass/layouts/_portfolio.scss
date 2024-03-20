@@ -10,11 +10,27 @@
         flex-wrap: wrap;
         column-gap: 8px;
         row-gap: 15px;
-        width: 320px;
+        width: 325px;
+    }
 
+    @include mq(tablet) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    @include mq(desktop) {
+        margin-top: 94px;
+        margin-bottom: 60px;
     }
 }
 
-// .portfolio__item:not(:last-child) {
-//     margin-right: 8px;
-// }
+.portfolio__item {
+    @include mq(tablet) {
+        &:not(:first-child) {
+            margin-left: 8px;
+        }
+    }
+    // &:not(:first-child) {
+    //         margin-left: 8px;
+    // }
+}

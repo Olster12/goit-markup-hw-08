@@ -40,9 +40,14 @@
 
 .address {
     margin-bottom: 60px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
     font-style: normal;
     text-align: center;
-    line-height: 1.14;
 
     color: #FFFFFF;
 
@@ -70,12 +75,15 @@
 .footer__titel {
     margin-bottom: 20px;
 
-    color: var(--text-footer-color);
-
+    font-family: Roboto;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    color: var(--text-footer-color);
 
     @include mq(desktop) {
         text-align: start;
@@ -86,13 +94,14 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
-    
+
     text-align: center;
     width: 206px;
 
-        @include mq(tablet) {
-                margin: 0px;
-            }
+    @include mq(tablet) {
+        margin: 0px;
+    }
+
     // margin-left: 70px;
 }
 

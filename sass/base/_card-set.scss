@@ -23,9 +23,13 @@
 
     @include mq(tablet) {
         border: 1px solid #EEEEEE;
-        flex-basis: calc(100% / 3 - var(--card-set-gap));
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
         margin-left: var(--card-set-gap);
         margin-top: var(--card-set-gap);
+    }
+
+    @include mq(desktop) {
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
     }
 }
 
@@ -49,7 +53,7 @@
 }
 
 .card__content {
-    padding: 20px 25px;
+    padding: 20px 24px;
     border-top: 0;
     border: 1px solid #EEEEEE;
 
@@ -67,7 +71,7 @@
 
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.59;
+    line-height: 1.55;
 
     color: var(--card-text-overlay);
 
@@ -86,20 +90,22 @@
 }
 
 .card__titel {
+    font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 1.08px;
 
     color: var(--text-h2-6-dark-color);
 }
 
 .card__text {
-    margin-top: 4px;
-
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.48px;
 
     color: var(--text-primery-color);
 }
