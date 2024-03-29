@@ -6,19 +6,21 @@
     margin-bottom: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 1600px;
+    max-width: 480px;
 
-    background-color:var(--background-header-color);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: var(--backgraund-hero-color);
 
     text-align: center;
     text-transform: uppercase;
 
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/bacgraund-hero.jpg);
+    background-image:
+        url(/images/bg-hero/bg-Header-img_sm.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .hero__title {
@@ -27,7 +29,7 @@
     margin-bottom: 30px;
     max-width: 360px;
 
-    color:var(--text-h2-6-light-color);
+    color: var(--text-h2-6-light-color);
 
     font-style: normal;
     font-weight: 900;
@@ -41,4 +43,3 @@
         line-height: 1.36;
     }
 }
-
