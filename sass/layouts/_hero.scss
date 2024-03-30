@@ -7,27 +7,97 @@
     padding-top: 118px;
     padding-bottom: 118px;
     max-width: 480px;
-
-    background-color: var(--backgraund-hero-color);
+    height: 400px;
 
     text-align: center;
     text-transform: uppercase;
 
-
-    background-image:
-        url(/images/bg-hero/bg-Header-img_sm.jpg),
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-
+    background-color: var(--backgraund-hero-color);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
+    background-image: url(/images/bg-hero/bg-Header-img_sm.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_sm.webp) 1x),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    @include mq(retina-2) {
+        background-image: url(/images/bg-hero/bg-Header-img_sm@2x.jpg),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_sm@2x.webp) 2x),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+
+    @include mq(retina-3) {
+        background-image: url(/images/bg-hero/bg-Header-img_sm@3x.jpg),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_sm@3x.webp) 3x),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+
+    @include mq(tablet) {
+        max-width: 768px;
+        background-image: url(/images/bg-hero/bg-Header-img_md.jpg),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+         background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_md.webp) 1x),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        @include mq(retina-2) {
+            background-image: url(/images/bg-hero/bg-Header-img_md@2x.jpg),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+            background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_md@2x.webp) 2x),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+
+        @include mq(retina-3) {
+            background-image: url(/images/bg-hero/bg-Header-img_md@3x.jpg),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+            background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_md@3x.webp) 3x),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
+
+    @include mq(desktop) {
+        max-width: 1600px;
+        height: 600px;
+
+        background-image: url(/images/bg-hero/bg-Header-img_lg.jpg),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_lg.webp)),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        @include mq(retina-2) {
+            background-image: url(/images/bg-hero/bg-Header-img_lg@2x.jpg),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+            background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_lg@2x.webp)),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+
+        @include mq(retina-3) {
+            background-image: url(/images/bg-hero/bg-Header-img_lg@3x.jpg),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+            background-image: -webkit-image-set(url(/images/bg-hero/bg-Header-img_lg@3x.webp)),
+                linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
 }
+
 
 .hero__title {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    max-width: 360px;
+    width: 360px;
 
     color: var(--text-h2-6-light-color);
 
@@ -41,5 +111,6 @@
         max-width: 696px;
         font-size: 44px;
         line-height: 1.36;
+        width: 696px;
     }
 }
