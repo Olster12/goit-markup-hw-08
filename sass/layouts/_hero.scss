@@ -97,7 +97,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 360px;
 
     color: var(--text-h2-6-light-color);
 
@@ -106,11 +105,13 @@
     font-size: 26px;
     line-height: 1.62;
 
+    @include mq(tablet) {
+        max-width: 360px;
+    }
 
     @include mq(desktop) {
         max-width: 696px;
         font-size: 44px;
         line-height: 1.36;
-        width: 696px;
     }
 }

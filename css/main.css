@@ -1023,19 +1023,22 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
   color: var(--text-h2-6-light-color);
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
   }
 }
 
