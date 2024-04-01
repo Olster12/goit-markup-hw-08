@@ -3,7 +3,6 @@
 .client__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     margin: -15px;
 }
 
@@ -36,8 +35,11 @@
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__icon:hover,
-.client__icon:focus {
-    border-color: var(--svg-link-color);
-    fill: var(--svg-link-color);
+.client__icon {
+
+    &:hover,
+    &:focus {
+        border-color: var(--svg-link-color);
+        fill: var(--svg-link-color);
+    }
 }

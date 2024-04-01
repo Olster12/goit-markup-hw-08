@@ -11,7 +11,6 @@
         margin-left: calc(-1 * var(--card-set-gap));
         margin-top: calc(-1 * var(--card-set-gap));
     }
-
 }
 
 .card-set__item {
@@ -39,13 +38,17 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card:hover,
-.card:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+.card {
+
+    &:hover,
+    &:focus {
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
+
 
 .card__thumb {
     position: relative;
@@ -69,9 +72,8 @@
 
     padding: 63px 24px;
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
+    font-family: Roboto;
+    @include fouts (400, 18px, 1.55, 0.54px);
 
     color: var(--card-text-overlay);
 
@@ -91,21 +93,14 @@
 
 .card__titel {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 1.08px;
+    @include fouts (700, 18px, 2, 1.08px);
 
     color: var(--text-h2-6-dark-color);
 }
 
 .card__text {
     font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
+    @include fouts (400, 16px, 1.87, 0.48px);
 
     color: var(--text-primery-color);
 }

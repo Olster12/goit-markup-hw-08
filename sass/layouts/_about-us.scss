@@ -36,9 +36,8 @@
 .about-us__title {
     margin-top: 27px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    font-family: Roboto;
+    @include fouts (700, 14px, normal, 0.42px);
     text-align: center;
     text-transform: uppercase;
 

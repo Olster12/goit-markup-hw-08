@@ -44,10 +44,8 @@
     display: inline-block;
     border: 1px solid transparent;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    font-family: Roboto;
+    @include fouts (700, 16px, 1.87, 0.96px);
     text-align: center;
 
     cursor: pointer;
@@ -77,10 +75,7 @@
     padding: 6px 22px;
 
     font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
+    @include fouts (500, 16px, 1.62, 0.48px);
     text-align: center;
 
     color: var(--btn-sec-text);

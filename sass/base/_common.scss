@@ -11,14 +11,14 @@
     padding-top: 60px;
     padding-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-family: Roboto;
+    @include fouts (700, 28px, 1.16, 0.84px);
     text-align: center;
 
     color: var(--text-h2-6-dark-color);
 
     @include mq(desktop) {
+        @include fouts (700, 36px, 1.16, 1.08px);
         padding-top: 94px;
         padding-bottom: 50px;
     }

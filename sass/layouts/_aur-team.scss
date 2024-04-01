@@ -9,9 +9,8 @@
 
     color: var(--text-h2-6-dark-color);
 
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.19;
+    font-family: Roboto;
+    @include fouts (500, 16px, normal, 0.48px);
     text-align: center;
 }
 
@@ -53,5 +52,9 @@
 
 .team__text {
     margin-bottom: 16px;
+
+    font-family: Roboto;
+    @include fouts (400, 16px, normal, 0.48px);
     text-align: center;
+    color: var(--text-primery-color);
 }

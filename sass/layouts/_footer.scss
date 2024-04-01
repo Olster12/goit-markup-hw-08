@@ -42,14 +42,11 @@
     margin-bottom: 60px;
 
     font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+    @include fouts (400, 14px, 1.14, 0.42px);
     font-style: normal;
     text-align: center;
 
-    color: #FFFFFF;
+    color: var(--text-footer-color);
 
     @include mq(desktop) {
         margin-bottom: 0px;
@@ -67,21 +64,20 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.address__link:focus,
-.address__link:hover {
-    color: var(--link-color);
+.address__link {
+
+    &:focus,
+    &:hover {
+        color: var(--link-color);
+    }
 }
+
 
 .footer__titel {
     margin-bottom: 20px;
 
     font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+    @include fouts (700, 14px, 1.14, 0.42px);
 
     color: var(--text-footer-color);
 
@@ -101,15 +97,12 @@
     @include mq(tablet) {
         margin: 0px;
     }
-
-    // margin-left: 70px;
 }
 
 /* Mailing list*/
 
 .footer__mailing {
     text-align: center;
-    // margin-left: 93px;
 }
 
 .footer__form {
@@ -145,10 +138,8 @@
 }
 
 .placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.03em;
+    font-family: Roboto;
+    @include fouts (400, 16px, 1.25, 0.48px);
 
     text-align: left;
     color: rgba(255, 255, 255, 0.6);

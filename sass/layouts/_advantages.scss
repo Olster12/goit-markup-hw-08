@@ -1,7 +1,6 @@
 /* Аdvantages */
 
 .advantages {
-    
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -12,6 +11,7 @@
 .advantages__item {
     @include mq(mobile-only) {
         max-width: 450px;
+
         &:not(:last-child) {
             margin-bottom: var(--card-set-gap);
         }
@@ -29,23 +29,12 @@
 }
 
 .advantages__tumba {
-    
-
     height: 120px;
     padding-top: 25px;
     padding-left: calc((100% - 70px) / 2);
-    // padding: 25px 190px;
 
     background-color: var(--backgraund-tumd-advantage);
     margin-bottom: 30px;
-
-    // @include mq(tablet) {
-    //     padding: 25px 142px;
-    // }
-
-    // @include mq(desktop) {
-    //     padding: 25px 100px;
-    // }
 }
 
 .advantages__title {
@@ -53,10 +42,8 @@
 
     color: var(--text-h2-6-dark-color);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+    font-family: Roboto;
+    @include fouts (700, 14px, 1.14, 0.42px);
     text-align: center;
 
     @include mq(tablet) {
@@ -65,7 +52,8 @@
 }
 
 .advantages__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-family: Roboto;
+    @include fouts (400, 14px, 1.71, 0.42px);
+
+    color: var(--text-primery-color);
 }

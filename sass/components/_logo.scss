@@ -5,11 +5,8 @@
     padding-top: 6px;
     padding-bottom: 16px;
 
-
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.19;
+    @include fouts (700, 24px, normal, 0.72px);
 
     @include mq(tablet) {
         padding-top: 26px;
@@ -17,9 +14,10 @@
     }
 
     @include mq(desktop) {
-        font-size: 26px;
         padding-top: 24px;
         padding-bottom: 25px;
+
+        @include fouts (700, 26px, normal, 0.78px);
     }
 }
 
