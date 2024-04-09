@@ -28,8 +28,6 @@
         display: block;
     }
 
-
-
     @include mq(tablet) {
         margin-left: 88px;
     }
@@ -132,6 +130,7 @@
 
     @include mq(tablet) {
         display: flex;
+        align-content: center;
         @include fouts (500, 12px, normal, 0.24px);
 
         color: var(--text-primery-color);
