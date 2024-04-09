@@ -258,7 +258,7 @@ img {
 .logo {
   display: inline-block;
   padding-top: 6px;
-  padding-bottom: 16px;
+  padding-bottom: 6px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -683,11 +683,12 @@ img {
 
 /*Header*/
 .header {
+  position: relative;
+  border-bottom: 1px solid rgb(236, 236, 236);
   background-color: var(--background-header-color);
 }
 
 .header__container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,40 +713,57 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding-top: 10px;
+    padding: 10px 0;
   }
 }
 
-.nav__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: var(--backgraund-mobile-menu);
-}
-.nav__container.is-open {
-  display: block;
-}
 @media screen and (max-width: 767.98px) {
   .nav__container {
     z-index: 2;
     display: none;
     position: absolute;
-    padding-left: 40px;
-    padding-bottom: 48px;
     top: 100%;
     left: 0;
     width: 100%;
   }
 }
+.nav__container.is-open {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .nav__container {
-    margin-left: 92px;
+    margin-left: 88px;
+  }
+}
+
+.nav_mobail-menu {
+  background-color: var(--backgraund-mobile-menu);
+}
+@media screen and (max-width: 767.98px) {
+  .nav_mobail-menu {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 101%;
+    margin-top: -2px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 25px;
+    padding-bottom: 108px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav_mobail-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -755,11 +773,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .nav__navigation {
-    margin-bottom: 306px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav__navigation {
     display: -webkit-box;
@@ -804,6 +817,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .nav__contact {
+    margin-top: auto;
     margin-bottom: 64px;
   }
 }
@@ -816,7 +830,7 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-left: 92px;
+    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -829,22 +843,28 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .nav__contact > .nav__item:not(:first-child) {
-    margin-bottom: 10px;
-  }
-}
-
 .nav__phone {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.68px;
   color: var(--link-color);
+  fill: var(--text-primery-color);
+}
+@media screen and (min-width: 480px) {
+  .nav__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.68px;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-weight: 500;
     font-size: 12px;
     line-height: normal;
@@ -875,9 +895,17 @@ img {
   line-height: normal;
   letter-spacing: 0.68px;
   color: var(--text-primery-color);
+  fill: var(--text-primery-color);
 }
 @media screen and (min-width: 768px) {
   .nav__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: normal;
@@ -887,6 +915,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .nav__email {
+    margin-bottom: 0px;
     font-weight: 500;
     font-size: 14px;
     line-height: normal;
@@ -905,6 +934,16 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__icon {
+    margin-right: 10px;
+  }
+}
 
 .nav__social {
   display: -webkit-box;
@@ -916,6 +955,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .nav__social {
@@ -981,8 +1021,6 @@ img {
   margin-bottom: 60px;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  height: 400px;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--backgraund-hero-color);
@@ -1012,7 +1050,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: url(../images/bg-hero/bg-Header-img_md.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url(../images/bg-hero/bg-Header-img_md.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_md.webp) 1x), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
@@ -1038,7 +1075,9 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp)), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
@@ -1261,6 +1300,7 @@ img {
 }
 
 .team-content {
+  background-color: var(--background-header-color);
   padding-top: 30px;
   padding-bottom: 24px;
 }

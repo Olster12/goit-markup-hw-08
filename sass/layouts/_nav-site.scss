@@ -4,55 +4,68 @@
     display: flex;
     align-items: center;
 
-
     @include mq(mobile-only) {
         justify-content: space-between;
         width: 100%;
         flex-direction: row-reverse;
-        padding-top: 10px;
+        padding: 10px 0;
     }
 }
 
 .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: var(--backgraund-mobile-menu);
-
-    &.is-open {
-        display: block;
-    }
 
     @include mq(mobile-only) {
         z-index: 2;
         display: none;
         position: absolute;
 
-        padding-left: 40px;
-        padding-bottom: 48px;
-
         top: 100%;
         left: 0;
         width: 100%;
     }
 
+    &.is-open {
+        display: block;
+    }
+
+
+
     @include mq(tablet) {
-        margin-left: 92px;
+        margin-left: 88px;
     }
 }
 
-.nav__item:not(:last-child) {
+.nav_mobail-menu {
+    background-color: var(--backgraund-mobile-menu);
+
     @include mq(mobile-only) {
-        margin-bottom: 32px;
+        position: fixed;
+        display: flex;
+        height: 100%;
+        width: 101%;
+        margin-top: -2px;
+        flex-direction: column;
+        padding-left: 25px;
+        padding-bottom: 108px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
     }
 }
+
+.nav__item {
+
+    &:not(:last-child) {
+        @include mq(mobile-only) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
 
 .nav__navigation {
-    @include mq(mobile-only) {
-        margin-bottom: 306px;
-    }
-
     @include mq(tablet) {
         display: flex;
     }
@@ -62,7 +75,6 @@
     @include mq(tablet) {
         margin-right: 50px;
     }
-
 }
 
 .nav__link {
@@ -91,13 +103,14 @@
 
 .nav__contact {
     @include mq(mobile-only) {
+        margin-top: auto;
         margin-bottom: 64px;
     }
 
     @include mq(tablet) {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 92px;
+        margin-left: 96px;
     }
 
     @include mq(desktop) {
@@ -106,21 +119,19 @@
     }
 }
 
-.nav__contact>.nav__item {
-    @include mq(tablet) {
-        &:not(:first-child) {
-            margin-bottom: 10px;
-        }
-    }
-}
-
 .nav__phone {
     font-family: Roboto;
-    @include fouts (500, 34px, 1.17, 0.68px);
+    @include fouts (500, 30px, 1.17, 0.68px);
 
     color: var(--link-color);
+    fill: var(--text-primery-color);
+
+    @include mq(mobile) {
+        @include fouts (500, 34px, 1.17, 0.68px);
+    }
 
     @include mq(tablet) {
+        display: flex;
         @include fouts (500, 12px, normal, 0.24px);
 
         color: var(--text-primery-color);
@@ -146,14 +157,20 @@
     @include fouts (500, 24px, normal, 0.68px);
 
     color: var(--text-primery-color);
+    fill: var(--text-primery-color);
 
     @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
         @include fouts (500, 12px, normal, 0.24px);
 
         color: var(--text-primery-color);
     }
 
     @include mq(desktop) {
+        margin-bottom: 0px;
         @include fouts (500, 14px, normal, 0.28px);
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -171,12 +188,21 @@
     @include mq(mobile-only) {
         display: none;
     }
+
+    @include mq(tablet) {
+        margin-right: 8px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 10px;
+    }
 }
 
 .nav__social {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 10px;
 
     @include mq(tablet) {
         display: none;
@@ -203,7 +229,7 @@
 .nav__social-link {
     font-family: Roboto;
     @include fouts (500, 18px, 1.22, 0.36px);
-    
+
     color: var(--link-color);
 }
 

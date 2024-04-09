@@ -6,8 +6,6 @@
     margin-bottom: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
-    height: 400px;
 
     text-align: center;
     text-transform: uppercase;
@@ -40,7 +38,6 @@
     }
 
     @include mq(tablet) {
-        max-width: 768px;
         background-image: url(../images/bg-hero/bg-Header-img_md.jpg),
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
@@ -66,7 +63,9 @@
 
     @include mq(desktop) {
         max-width: 1600px;
-        height: 600px;
+        margin-bottom: 94px;
+        padding-top: 200px;
+        padding-bottom: 200px;
 
         background-image: url(../images/bg-hero/bg-Header-img_lg.jpg),
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
