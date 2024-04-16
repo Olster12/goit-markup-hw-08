@@ -35,6 +35,10 @@
 /* CARD */
 
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -57,6 +61,7 @@
 }
 
 .card__content {
+    flex-grow: 1;
     padding: 20px 24px;
     border-top: 0;
 

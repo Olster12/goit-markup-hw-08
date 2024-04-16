@@ -27,7 +27,6 @@
     transform: translate(-50%, -50%) scale(0.6);
 }
 
-
 .modal {
     position: absolute;
     top: 50%;
@@ -59,13 +58,13 @@
     margin-bottom: 12px;
 
     font-family: Roboto;
-    @include fouts (700, 20px, 1.5, 0.6px);
+    @include fouts (700, 17px, 1.5, 0.6px);
     text-transform: none;
 
     color: #212121;
 
-    @include mq(desktop) {
-        @include fouts (700, 20px, normal, 0.6px);
+    @include mq(mobile) {
+        @include fouts (700, 20px, 1.5, 0.6px);
     }
 }
 
