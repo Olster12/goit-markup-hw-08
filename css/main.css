@@ -1130,18 +1130,16 @@ img {
     margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.9)), to(rgba(47, 48, 58, 0.5)));
-    background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), linear-gradient(rgba(47, 48, 58, 0.9), rgba(47, 48, 58, 0.5));
-    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp)), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.9)), to(rgba(47, 48, 58, 0.5)));
-    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp)), linear-gradient(rgba(47, 48, 58, 0.9), rgba(47, 48, 58, 0.5));
+    background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5)));
+    background-image: url(../images/bg-hero/bg-Header-img_lg.jpg), linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp), linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)));
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/bg-hero/bg-Header-img_lg@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5)));
     background-image: url(../images/bg-hero/bg-Header-img_lg@2x.jpg), linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
-    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@2x.webp)), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5)));
-    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@2x.webp)), linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+    background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@2x.webp), linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)));
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
