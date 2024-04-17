@@ -23,8 +23,8 @@
     <header class="header">
         <div class="header__container container">
             <nav class="nav">
-                <button type="button" class="nav__butn" data-menu-button aria-colcount="nav__container">
-                    <svg width="24" height="24" aria-expanded="false" aria-label="перемикач мобільного меню">
+                <button type="button" class="nav__butn" data-menu-button>
+                    <svg width="24" height="24" role="button" aria-expanded="false" aria-label="перемикач мобільного меню">
                         <use class="nav__icone-menu" href="./images/sprit.svg#nav_menu"></use>
                         <use class="nav__icone-close" href="./images/sprit.svg#nav_close"></use>
                     </svg>
@@ -160,9 +160,9 @@
                             <label class="check">
                                 <input class="visually-hidden" type="checkbox">
                                 <span class="check__box"></span>
-                                <p class="check__text"> Погоджуюся з розсилкою та приймаю
+                                <span class="check__text"> Погоджуюся з розсилкою та приймаю
                                     <span class="check__text check__doc">Умови договору</span>
-                                </p>
+                                </span>
                             </label>
                             <button type="submit" class="button-primery">Відправити</button>
                         </form>

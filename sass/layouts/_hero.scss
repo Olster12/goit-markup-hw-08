@@ -15,49 +15,49 @@
     background-position: center;
     background-size: cover;
 
-    background-image: url(../images/bg-hero/bg-Header-img_sm.jpg),
-        linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.5));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.5)),
+        url(../images/bg-hero/bg-Header-img_sm.jpg);
 
-    background-image: 5x-webkit-image-set(url(../images/bg-hero/bg-Header-img_sm.webp) 1x),
-        linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.5));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.5)),
+        -webkit-image-set(url(../images/bg-hero/bg-Header-img_sm.webp) 1x);
 
     @include mq(retina-2) {
-        background-image: url(../images/bg-hero/bg-Header-img_sm@2x.jpg),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            url(../images/bg-hero/bg-Header-img_sm@2x.jpg);
 
-        background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_sm@2x.webp) 2x),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            -webkit-image-set(url(../images/bg-hero/bg-Header-img_sm@2x.webp) 2x);
     }
 
     @include mq(retina-3) {
-        background-image: url(../images/bg-hero/bg-Header-img_sm@3x.jpg),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            url(../images/bg-hero/bg-Header-img_sm@3x.jpg);
 
-        background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_sm@3x.webp) 3x),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            -webkit-image-set(url(../images/bg-hero/bg-Header-img_sm@3x.webp) 3x);
     }
 
     @include mq(tablet) {
-        background-image: url(../images/bg-hero/bg-Header-img_md.jpg),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            url(../images/bg-hero/bg-Header-img_md.jpg);
 
-        background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_md.webp) 1x),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            -webkit-image-set(url(../images/bg-hero/bg-Header-img_md.webp) 1x);
 
         @include mq(retina-2) {
-            background-image: url(../images/bg-hero/bg-Header-img_md@2x.jpg),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                url(../images/bg-hero/bg-Header-img_md@2x.jpg);
 
-            background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_md@2x.webp) 2x),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                -webkit-image-set(url(../images/bg-hero/bg-Header-img_md@2x.webp) 2x);
         }
 
         @include mq(retina-3) {
-            background-image: url(../images/bg-hero/bg-Header-img_md@3x.jpg),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(45, 49, 101, 0.5), rgba(47, 48, 58, 0.5)),
+                url(../images/bg-hero/bg-Header-img_md@3x.jpg);
 
-            background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_md@3x.webp) 3x),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                -webkit-image-set(url(../images/bg-hero/bg-Header-img_md@3x.webp) 3x);
         }
     }
 
@@ -67,26 +67,26 @@
         padding-top: 200px;
         padding-bottom: 200px;
 
-        background-image: url(../images/bg-hero/bg-Header-img_lg.jpg),
-            linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            url(../images/bg-hero/bg-Header-img_lg.jpg);
 
-        background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)));
+        background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+            -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg.webp));
 
         @include mq(retina-2) {
-            background-image: url(../images/bg-hero/bg-Header-img_lg@2x.jpg),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                url(../images/bg-hero/bg-Header-img_lg@2x.jpg);
 
-            background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@2x.webp),
-                    linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@2x.webp));
         }
 
         @include mq(retina-3) {
-            background-image: url(../images/bg-hero/bg-Header-img_lg@3x.jpg),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                url(../images/bg-hero/bg-Header-img_lg@3x.jpg);
 
-            background-image: -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@3x.webp)),
-                linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5));
+            background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+                -webkit-image-set(url(../images/bg-hero/bg-Header-img_lg@3x.webp));
         }
     }
 }
