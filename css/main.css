@@ -622,7 +622,7 @@ img {
   display: block;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 7px;
+  font-size: 9px;
   line-height: 1.62;
   letter-spacing: 0.12px;
   text-transform: none;
@@ -666,8 +666,13 @@ img {
 .form__comment {
   padding: 12px 16px;
   margin-bottom: 20px;
-  height: 120px;
+  height: 100px;
   resize: none;
+}
+@media screen and (min-width: 480px) {
+  .form__comment {
+    height: 120px;
+  }
 }
 
 .check {
@@ -699,7 +704,7 @@ img {
   margin-left: 8px;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 7px;
+  font-size: 9px;
   line-height: normal;
   letter-spacing: 0.36px;
   text-transform: none;

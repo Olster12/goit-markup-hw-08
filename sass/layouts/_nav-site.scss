@@ -13,7 +13,6 @@
 }
 
 .nav__container {
-
     @include mq(mobile-only) {
         z-index: 2;
         display: none;
@@ -61,7 +60,6 @@
         }
     }
 }
-
 
 .nav__navigation {
     @include mq(tablet) {
