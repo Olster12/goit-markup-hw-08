@@ -10,11 +10,7 @@
         flex-wrap: wrap;
         column-gap: 8px;
         row-gap: 15px;
-        width: 320px;
-    }
-
-    @include mq(mobile) {
-        width: 325px;
+        max-width: 325px;
     }
 
     @include mq(tablet) {
